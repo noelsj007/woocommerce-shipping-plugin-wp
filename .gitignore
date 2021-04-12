@@ -1,1 +1,4 @@
-sendy-api/trunk/*
+.DS_Store
+gulpfile.js
+package.json
+package-lock.json

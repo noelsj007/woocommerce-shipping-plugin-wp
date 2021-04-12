@@ -1,0 +1,67 @@
+@import '../../libraries/wp-conditions/assets/css/wp-conditions';
+
+/* Hide visibility from admin */
+.post-type-wafs .misc-pub-visibility#visibility {
+	display: none;
+}
+
+.wafs-option label {
+	display: inline-block;
+	width: 150px;
+}
+
+.wafs_conditions_meta_box > p:first-child + div > .or_match {
+	display: none;
+}
+
+/* Description */
+.wafs_desc {
+	display: none;
+	position: absolute;
+	background: rgba( 0, 0, 0, .8 );
+	min-width: 25px;
+	max-width: 200px;
+	border-radius: 6px;
+	padding: 5px 10px;
+	color: white;
+	margin-top: 10px;
+	right: 40px;
+	text-align: center;
+}
+.wafs_desc:after {
+	border-top: 0px solid transparent;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid rgba( 0, 0, 0, .8 );
+	content: ' ';
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	z-index: 999;
+}
+.wafs_tip:hover ~ .wafs_desc {
+	display: block !important;
+}
+.wafs-description {
+	width: 40px;
+	float: right;
+	line-height: 20px;
+}
+
+.condition-delete {
+	display: none;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+.wafs-condition-wrap:hover .condition-delete {
+	display: inline-block;
+	opacity: 1;
+}
+
+/* Overview row actions */
+#advanced_free_shipping_shipping_methods tr .row-actions {
+	visibility: hidden;
+}
+#advanced_free_shipping_shipping_methods tr:hover > td > .row-actions {
+	visibility: visible !important;
+}
